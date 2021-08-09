@@ -3,12 +3,12 @@ import 'firebase/auth';
 
 // Firebase Config
 const firebaseConfig = {
-  apiKey: 'AIzaSyCfjYt2dL2XsF3E7QXvk6rNzHp0DqCt0UA',
-  authDomain: 'social-media-app-84fa7.firebaseapp.com',
-  projectId: 'social-media-app-84fa7',
-  storageBucket: 'social-media-app-84fa7.appspot.com',
-  messagingSenderId: '1086159032989',
-  appId: '1:1086159032989:web:e08afbe3750b8af7083a74',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -19,4 +19,4 @@ export const auth = firebase.auth();
 // Todo
 // Firestore not setup yet
 // export const firestore = firebase.firestore();
-export default firebase;
+export default firebaseConfig;

@@ -8,7 +8,6 @@ function Signup() {
     <>
     <h1>Create account</h1>
     <div className='sign-up-container'>
-      
       <form className='sign-up-form'>
         <label htmlFor="email">Email</label><br/>
         <input type='text' placeholder='Enter your email'></input><br/>

@@ -38,9 +38,9 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
-        <Route path="/" component={HomePage} />
-        <Route path="/signup" component={SignupPage}/>
-        <Route path="/signin" component={SigninPage}/>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/signup" component={SignupPage}/>
+        <Route exact path="/signin" component={SigninPage}/>
       </Switch>
     </div>
   </Router>
