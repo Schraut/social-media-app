@@ -14,8 +14,8 @@ import './App.css';
 
 // Pages
 import { HomePage } from './pages/homepage/homepage.component';
-import { SignupPage } from './pages/signup/signup.component';
-import { SigninPage } from './pages/signin/sigin.component';
+import { SignupPage } from './pages/signup/signup-page';
+import { SigninPage } from './pages/signin/signin-page';
 
 function App() {
   return (
